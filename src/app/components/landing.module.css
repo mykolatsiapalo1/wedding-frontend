@@ -1,0 +1,160 @@
+.container {
+  background-image: url('https://s3-alpha-sig.figma.com/img/0a47/3fd6/d4350ffc4e582c70a30aad539230cf92?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Tmy0~oOEQHEa86FuJ~D6jDhHiFnxgyReliryCZ0ElFVCvHtkmcfwkjEsm~XKVFjZGIfjfx30PyqHN6WLQ8qcEdEXAVE6BKMVO7VBykEaJjkUozZ8AMfmLrezwQexyW-8BmQHUJqlQm4kKHmpR3LX82Ry~LdD0iULDKQBdS6oJExFE~IoPngpcaucGLg8t68XAsEkjWeAf7WNu~TrzK~jRIJgveOZK8kxZWGMlu4T~7ZIxGWn7VRNrzEbNbn2tGgAm5GMzbnd9N83BgRpROtKDa3F1vTIw0E2QjEIgOkeuzCRO4iqMAXydeov8LNM7wLdzIBbm0ZkIJoISM9C4q0fhQ__');
+  background-size: cover;
+  background-position: bottom;
+  border-radius: 10px;
+  height: 90vh;
+  overflow: hidden;
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 320px;
+}
+
+.bigText {
+  font-size: 56px;
+  font-weight: 500;
+}
+
+.mediumText {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.smallText {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.miniText {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.btnGetStarted {
+  background-color: black;
+  color: white;
+  border-radius: 90px;
+  padding: 15px 100px;
+  font-size: 16px;
+
+  border: none;
+  margin-top: 37px;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+  width: 350px !important;
+  height: 140px !important;
+}
+
+.card:nth-child(1) {
+  transform: rotate(5deg);
+}
+
+.card:nth-child(2) {
+  transform: rotate(-8deg);
+  background-color: #dfd7cb;
+}
+
+.card:nth-child(3) {
+  transform: rotate(5deg);
+}
+
+.imgPosition {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+}
+.r {
+  display: none;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+/* mobile */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-position: center;
+  }
+
+  .r {
+    display: flex;
+    justify-content: center;
+    margin-top: 31px;
+  }
+
+  .d {
+    display: none;
+  }
+
+  .bigText {
+    font-size: 28px;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .btnGetStarted {
+    font-size: 14px;
+    width: 325px;
+    margin: 20px 0;
+  }
+
+  .card {
+    width: 365px !important;
+    height: 180px !important;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f4ebe8;
+  }
+
+  .card:nth-child(1) {
+    background-color: #dfd7cb;
+    transform: rotate(0deg);
+  }
+
+  .card:nth-child(2) {
+    transform: rotate(0deg);
+    background-color: #dfd7cb;
+  }
+
+  .card:nth-child(3) {
+    background-color: #dfd7cb;
+    transform: rotate(0deg);
+  }
+
+  .imgPosition {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 25px !important;
+    height: 25px !important;
+  }
+}
